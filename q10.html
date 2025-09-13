@@ -1,0 +1,34 @@
+<!-- Q10: Embed Flash Movie -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q10 - Flash Movie</title>
+  </head>
+  <body>
+    <h1>Flash Movie Example</h1>
+
+    <!-- Note: Flash is deprecated. This shows traditional embedding method -->
+    <object
+      width="400"
+      height="300"
+      data="movie.swf"
+      type="application/x-shockwave-flash"
+    >
+      <param name="movie" value="movie.swf" />
+      <param name="quality" value="high" />
+      <param name="bgcolor" value="#ffffff" />
+      <param name="allowfullscreen" value="true" />
+      <p>Flash Player is required to view this content.</p>
+    </object>
+
+    <!-- Alternative modern approach would use HTML5 video -->
+    <p>
+      <em
+        >Note: Flash is no longer supported by modern browsers. Consider using
+        HTML5 video instead.</em
+      >
+    </p>
+  </body>
+</html>

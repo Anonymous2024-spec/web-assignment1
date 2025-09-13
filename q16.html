@@ -1,0 +1,86 @@
+<!-- Q16: Contact Form -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q16 - Contact Form</title>
+    <style>
+      .form-container {
+        width: 500px;
+        margin: 20px auto;
+        padding: 20px;
+        border: 2px solid #333;
+        background-color: #f9f9f9;
+      }
+      table {
+        width: 100%;
+      }
+      td {
+        padding: 10px;
+      }
+      input[type="text"],
+      input[type="email"],
+      textarea,
+      select {
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+      }
+      textarea {
+        height: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <h2 align="center">Contact Information</h2>
+      <table>
+        <tr>
+          <td>Name:</td>
+          <td>
+            <input type="text" name="name" placeholder="Enter your full name" />
+          </td>
+        </tr>
+        <tr>
+          <td>Email:</td>
+          <td>
+            <input type="email" name="email" placeholder="Enter your email" />
+          </td>
+        </tr>
+        <tr>
+          <td>Phone:</td>
+          <td>
+            <input type="text" name="phone" placeholder="Enter phone number" />
+          </td>
+        </tr>
+        <tr>
+          <td>Subject:</td>
+          <td>
+            <select name="subject">
+              <option>General Inquiry</option>
+              <option>Technical Support</option>
+              <option>Business Proposal</option>
+              <option>Other</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Message:</td>
+          <td>
+            <textarea
+              name="message"
+              placeholder="Enter your message"
+            ></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center">
+            <input type="submit" value="Send Message" />
+            <input type="reset" value="Clear Form" />
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

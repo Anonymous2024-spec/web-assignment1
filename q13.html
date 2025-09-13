@@ -1,0 +1,44 @@
+<!-- Q13: Simple Form -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q13 - Simple Form</title>
+    <style>
+        .form-container {
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        input[type="text"], input[type="number"], input[type="date"] {
+            width: 100%;
+            padding: 5px;
+            margin: 5px 0 10px 0;
+            box-sizing: border-box;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h3>Student Information Form</h3>
+        <label>Enter Name:</label>
+        <input type="text" name="name" placeholder="Enter your name">
+        
+        <label>Enter Roll No:</label>
+        <input type="number" name="rollno" placeholder="Enter roll number">
+        
+        <label>Enter Age:</label>
+        <input type="number" name="age" placeholder="Enter your age">
+        
+        <label>Enter DOB:</label>
+        <input type="date" name="dob">
+        
+        <input type="submit" value="Submit">
+    </div>
+</body>
+</html>

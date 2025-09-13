@@ -1,0 +1,87 @@
+
+<!-- Q17: Feedback Form -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q17 - Feedback Form</title>
+    <style>
+        .form-container {
+            width: 480px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 2px solid #333;
+            background-color: #f0f0f0;
+        }
+        table {
+            width: 100%;
+        }
+        td {
+            padding: 8px;
+            vertical-align: top;
+        }
+        input[type="text"], input[type="email"], textarea, select {
+            width: 100%;
+            padding: 6px;
+            box-sizing: border-box;
+        }
+        textarea {
+            height: 60px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2 align="center">Feedback Form</h2>
+        <table>
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <td>Rating:</td>
+                <td>
+                    <input type="radio" name="rating" value="excellent"> Excellent
+                    <input type="radio" name="rating" value="good"> Good
+                    <input type="radio" name="rating" value="average"> Average
+                    <input type="radio" name="rating" value="poor"> Poor
+                </td>
+            </tr>
+            <tr>
+                <td>Service Type:</td>
+                <td>
+                    <input type="checkbox" name="service" value="web"> Web Design
+                    <input type="checkbox" name="service" value="mobile"> Mobile App
+                    <input type="checkbox" name="service" value="seo"> SEO
+                </td>
+            </tr>
+            <tr>
+                <td>Comments:</td>
+                <td><textarea name="comments" placeholder="Please share your feedback"></textarea></td>
+            </tr>
+            <tr>
+                <td>Recommend:</td>
+                <td>
+                    <select name="recommend">
+                        <option>Would you recommend us?</option>
+                        <option>Yes, definitely</option>
+                        <option>Maybe</option>
+                        <option>No</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Submit Feedback">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
